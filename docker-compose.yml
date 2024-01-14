@@ -3,15 +3,12 @@ version: '3.8'
 services:
     yogabi:
         container_name: yogabi
+        volumes:
+            - ~/.aws:/root/.aws # Mount AWS credential store location
         build:
             context: .
             dockerfile: Dockerfile
         ports:
             - 3000:3000
         environment:
-            - CHOKIDAR_USEPOLLING=true
-        deploy:
-            resources:
-                limits:
-                    cpus: '8'
-                    memory: 4096M
+            - CHOKIDAR_USEPOLLING=true # enable hot reload
