@@ -1,5 +1,5 @@
 # Yogabi.eu
-Simple static website with nextJs and nextUi. Deployment and infrastructure provisioning via serverless framework. Served via Cloudfront & S3
+Simple static website with next-js and next-ui. Deployment and infrastructure provisioning via serverless framework. Served via Cloudfront & S3
 
 ### Install dependencies
 
@@ -18,6 +18,8 @@ serverless config credentials --provider aws --key XXX --secret XXX --profile XX
 
 ```bash
 npm run dev
+# Or using Docker (without local node installation)
+docker compose up -d
 ```
 
 ### Deploy
