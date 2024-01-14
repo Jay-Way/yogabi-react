@@ -1,4 +1,4 @@
-service: yogabi-react
+service: ${env:APP_NAME}-react
 
 provider:
     name: aws
