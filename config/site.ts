@@ -1,69 +1,67 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Yogabi Yoga",
+	description: "Yogabi Yoga Studio Baden-Baden",
 	navItems: [
 		{
 			label: "Home",
 			href: "/",
 		},
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
+		{
+		  label: "Yogaraum",
+		  href: "/room",
+		},
+		{
+		  label: "Preise",
+		  href: "/pricing",
+		},
+		{
+		  label: "Kursplan",
+		  href: "/courses",
+		},
+		{
+			label: "Gallerie",
+			href: "/gallery",
+		},
+		{
+			label: "Über mich",
+			href: "/about",
+		},
+		{
+			label: "Kontakt",
+			href: "/contact",
+		}
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "Home",
+			href: "/",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "Yogaraum",
+			href: "/room",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "Preise",
+			href: "/pricing",
 		},
 		{
-			label: "Team",
-			href: "/team",
+			label: "Kursplan",
+			href: "/courses",
 		},
 		{
-			label: "Calendar",
-			href: "/calendar",
+			label: "Gallerie",
+			href: "/gallery",
 		},
 		{
-			label: "Settings",
-			href: "/settings",
+			label: "Über mich",
+			href: "/about",
 		},
 		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+			label: "Kontakt",
+			href: "/contact",
+		}
 	],
-	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
-	},
+	links: {},
 };
