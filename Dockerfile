@@ -1,20 +1,12 @@
-FROM node:21-alpine
+FROM node:21-alpine3.19
 
-WORKDIR /home/node/app
+WORKDIR /react-app
 
-ENV PATH /app/node_modules/.bin:$PATH
+EXPOSE 3000
 
-# install app dependencies
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install -g serverless
-RUN npm install
-
-RUN apk add --no-cache aws-cli
-
-# add app
-COPY . ./
+RUN apk update && apk add aws-cli --no-cache
 
 RUN serverless plugin install -n serverless-s3-sync
 
-CMD [ "npm", "run", "dev" ]
+USER node
+
