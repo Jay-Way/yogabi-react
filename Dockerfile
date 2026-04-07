@@ -6,7 +6,7 @@ EXPOSE 3000
 
 RUN apk update && apk add aws-cli --no-cache
 
-RUN serverless plugin install -n serverless-s3-sync
+RUN npm install -g serverless
 
 USER node
 

@@ -1,9 +1,11 @@
 import MobileWelcomeImage from "@/public/gallery1.jpg";
 import {Image} from "@nextui-org/react";
+import { ClosedModal } from "@/components/closed-modal";
 
 export default function Home() {
 	return (
 		<>
+			<ClosedModal />
 			<div className="block md:hidden m-3">
 				<div className="mb-3 flex flex-col text-center">
 					<h1 className="font-semibold text-4xl">Namasté</h1>

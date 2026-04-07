@@ -34,6 +34,8 @@ docker compose exec YOUR_APP_NAME sh
 # Configure serverless with the credentials from above, this will add them to ~/.aws/credentials (You might need to create this file)
 # Add your AWS credentials for --key and --secret
 serverless config credentials --provider aws --key XXX --secret XXX --profile $AWS_PROFILE_NAME
+# The "config credentials" command was deprecated in serverless v4. To configure your AWS credentials, run the "serverless" command instead.
+
 ```
 
 ### Deploy
@@ -58,3 +60,4 @@ aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID
 
 - Translation via i118 etc
 - Deploy script
+- Migrate away from Serverless Framework — now requires a paid account/subscription. Alternatives: AWS CDK, Terraform, or plain AWS CLI scripts to provision the S3 bucket and CloudFront distribution directly
