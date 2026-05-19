@@ -1,3 +1,5 @@
+"use client";
+
 import MobileWelcomeImage from "@/public/gallery1.jpg";
 import {Image} from "@nextui-org/react";
 import { ClosedModal } from "@/components/closed-modal";
