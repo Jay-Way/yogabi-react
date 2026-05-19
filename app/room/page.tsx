@@ -1,3 +1,5 @@
+"use client";
+
 import {Image} from "@nextui-org/react";
 import Room1Image from "../../public/room_1.jpeg"
 import Room2Image from "../../public/gallery6_resized.jpg"

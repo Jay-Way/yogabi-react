@@ -1,3 +1,5 @@
+"use client";
+
 import { title } from "@/components/primitives";
 import {Image} from "@nextui-org/react";
 import Logo from "@/public/logo.png";

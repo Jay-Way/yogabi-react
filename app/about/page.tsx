@@ -1,3 +1,5 @@
+"use client";
+
 import {Image} from "@nextui-org/react";
 import AboutImage from "@/public/misc_items.jpg";
 export default function AboutPage() {
